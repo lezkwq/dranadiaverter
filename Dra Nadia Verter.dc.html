@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Dra. Nádia Verter | Lentes em Resina em Blumenau</title>
+<meta name="description" content="Dra. Nádia Verter, cirurgiã dentista em Blumenau. Odontologia estética e Lentes em Resina com naturalidade, atendimento próximo e atenção aos detalhes." />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { max-width: 100%; overflow-x: hidden; overscroll-behavior-x: none; }
+  body { margin: 0; background: #f3eee9; font-family: Manrope, "Helvetica Neue", Helvetica, sans-serif; color: #292320; -webkit-font-smoothing: antialiased; text-wrap: pretty; }
+  img { display: block; max-width: 100%; }
+  button { font-family: inherit; }
+  a { color: #292320; text-decoration: none; }
+  a:hover { color: #c69a8d; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Dra. Nádia Verter | Lentes em Resina em Blumenau",
+  "description": "Odontologia estética e Lentes em Resina em Blumenau, com atendimento próximo e resultados naturais.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Francisco Vahldieck, 955, 1º Andar",
+    "addressLocality": "Blumenau",
+    "addressRegion": "SC",
+    "postalCode": "89056-001",
+    "addressCountry": "BR"
+  },
+  "telephone": "+5547992754013",
+  "areaServed": "Blumenau, SC",
+  "medicalSpecialty": "Cosmetic Dentistry",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "187" }
+}
+</script>
+</helmet>
+<div style="width:calc(100% - clamp(0px, 5vw, 64px)); max-width:1440px; margin:clamp(0px, 2.4vw, 32px) auto; background:#faf8f5; border-radius:4px;">
+
+  <header style="position:sticky; top:0; z-index:60; display:flex; align-items:center; justify-content:space-between; gap:24px; height:62px; padding:0 clamp(20px, 4vw, 40px); background:rgba(250,248,245,0.92); backdrop-filter:blur(10px); border-bottom:1px solid #e8dfda;">
+    <a href="#topo" style="font-size:clamp(17px, 2.2vw, 21px); font-weight:500; letter-spacing:-0.025em; color:#292320;">Dra. Nádia Verter</a>
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <nav style="display:flex; align-items:center; gap:clamp(18px, 2.4vw, 30px);">
+        <a href="#sobre" style="font-size:13px; font-weight:400; letter-spacing:0.01em; color:#756a64;">Sobre</a>
+        <a href="#lentes" style="font-size:13px; font-weight:400; letter-spacing:0.01em; color:#756a64;">Lentes em Resina</a>
+        <a href="#resultados" style="font-size:13px; font-weight:400; letter-spacing:0.01em; color:#756a64;">Resultados</a>
+        <a href="#contato" style="font-size:13px; font-weight:400; letter-spacing:0.01em; color:#756a64;">Contato</a>
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:#302825; color:#ffffff; border-radius:999px; padding:10px 20px; font-size:13px; font-weight:500; transition:opacity 200ms ease;" style-hover="opacity:0.82; color:#ffffff;">
+          <img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" style="width:15px; height:15px;" />
+          Agendar
+        </a>
+      </nav>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <button onClick="{{ openMenu }}" aria-label="Abrir menu" style="display:flex; flex-direction:column; justify-content:center; gap:5px; width:44px; height:44px; padding:0 10px; background:transparent; border:none; cursor:pointer;">
+        <span style="display:block; height:1px; width:100%; background:#292320;"></span>
+        <span style="display:block; height:1px; width:100%; background:#292320;"></span>
+      </button>
+    </sc-if>
+  </header>
+
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; inset:0; z-index:200; background:#faf8f5; display:flex; flex-direction:column; padding:20px clamp(20px, 6vw, 32px) 32px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; height:42px;">
+        <span style="font-size:18px; font-weight:500; letter-spacing:-0.025em;">Dra. Nádia Verter</span>
+        <button onClick="{{ closeMenu }}" aria-label="Fechar menu" style="width:44px; height:44px; background:transparent; border:none; font-size:26px; font-weight:300; color:#292320; cursor:pointer;">×</button>
+      </div>
+      <nav style="display:flex; flex-direction:column; gap:4px; margin-top:44px;">
+        <a href="#sobre" onClick="{{ closeMenu }}" style="font-size:30px; font-weight:400; letter-spacing:-0.03em; padding:12px 0; border-bottom:1px solid #e8dfda;">Sobre</a>
+        <a href="#lentes" onClick="{{ closeMenu }}" style="font-size:30px; font-weight:400; letter-spacing:-0.03em; padding:12px 0; border-bottom:1px solid #e8dfda;">Lentes em Resina</a>
+        <a href="#resultados" onClick="{{ closeMenu }}" style="font-size:30px; font-weight:400; letter-spacing:-0.03em; padding:12px 0; border-bottom:1px solid #e8dfda;">Resultados</a>
+        <a href="#depoimentos" onClick="{{ closeMenu }}" style="font-size:30px; font-weight:400; letter-spacing:-0.03em; padding:12px 0; border-bottom:1px solid #e8dfda;">Depoimentos</a>
+        <a href="#contato" onClick="{{ closeMenu }}" style="font-size:30px; font-weight:400; letter-spacing:-0.03em; padding:12px 0; border-bottom:1px solid #e8dfda;">Contato</a>
+      </nav>
+      <div style="margin-top:auto; display:flex; align-items:center; gap:14px;">
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="flex:1; display:inline-flex; align-items:center; justify-content:center; gap:10px; height:48px; background:#302825; color:#ffffff; border-radius:999px; font-size:14px; font-weight:500;">
+          <img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" style="width:17px; height:17px;" />
+          Agendar avaliação
+        </a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex; align-items:center; justify-content:center; width:48px; height:48px; border:1px solid #d8cec8; border-radius:999px;">
+          <img src="https://cdn.simpleicons.org/instagram/302825" alt="Instagram" style="width:18px; height:18px;" />
+        </a>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+  <section id="topo" style="position:relative; min-height:calc(100svh - 62px); display:flex; flex-direction:column; justify-content:flex-end; overflow:hidden;">
+    <img src="fotos/nadia-retrato.jpg" alt="Dra. Nádia Verter, cirurgiã dentista em Blumenau" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 22%;" />
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(41,35,32,0) 35%, rgba(41,35,32,0.55) 62%, rgba(41,35,32,0.88) 100%);"></div>
+    <div style="position:relative; padding:0 20px 36px;">
+      <p style="margin:0 0 18px; font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#f3eee9;">Odontologia Estética · Blumenau SC</p>
+      <h1 style="margin:0; font-size:clamp(40px, 11vw, 56px); line-height:0.95; letter-spacing:-0.045em; font-weight:400; color:#ffffff;">Lentes em Resina<br />com naturalidade.</h1>
+      <p style="margin:18px 0 0; max-width:380px; font-size:15px; line-height:1.6; color:#f3eee9;">Atendimento próximo e atenção aos detalhes para que o resultado combine com o seu rosto e continue parecendo seu.</p>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:26px;">
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:48px; padding:12px 22px; background:#faf8f5; color:#302825; border-radius:999px; font-size:14px; font-weight:500;">
+          <img src="https://cdn.simpleicons.org/whatsapp/302825" alt="WhatsApp" style="width:16px; height:16px;" />
+          Agendar avaliação
+        </a>
+        <a href="#resultados" style="display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:12px 22px; border:1px solid rgba(255,255,255,0.6); border-radius:999px; font-size:14px; font-weight:500; color:#ffffff;">Ver resultados</a>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+  <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+  <section id="topo" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:clamp(36px, 5vw, 72px); align-items:center; padding:clamp(44px, 7vw, 96px) clamp(20px, 4vw, 40px) clamp(40px, 5vw, 72px);">
+    <div style="max-width:620px;">
+      <p style="margin:0 0 clamp(20px, 3vw, 30px); font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#9a8d86;">Odontologia Estética · Blumenau SC</p>
+      <h1 style="margin:0; font-size:clamp(42px, 7vw, 88px); line-height:0.95; letter-spacing:-0.045em; font-weight:400; color:#292320;">Lentes em Resina<br />com naturalidade.</h1>
+      <p style="margin:clamp(22px, 3vw, 32px) 0 0; max-width:430px; font-size:clamp(15px, 1.2vw, 17px); line-height:1.65; font-weight:400; color:#756a64;">Atendimento próximo e atenção aos detalhes para que o resultado combine com o seu rosto e continue parecendo seu.</p>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:clamp(28px, 3.5vw, 40px);">
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:46px; padding:12px 24px; background:#302825; color:#ffffff; border-radius:999px; font-size:14px; font-weight:500; transition:opacity 200ms ease;" style-hover="opacity:0.82; color:#ffffff;">
+          <img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" style="width:16px; height:16px;" />
+          Agendar avaliação
+        </a>
+        <a href="#resultados" style="display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:12px 24px; border:1px solid #d8cec8; border-radius:999px; font-size:14px; font-weight:500; color:#302825; transition:background 200ms ease;" style-hover="background:#f1ece8; color:#302825;">Ver resultados</a>
+      </div>
+    </div>
+    <div style="position:relative;">
+      <img src="fotos/nadia-retrato.jpg" alt="Dra. Nádia Verter, cirurgiã dentista em Blumenau" style="width:100%; aspect-ratio:3/4; max-height:660px; object-fit:cover; object-position:50% 28%; border-radius:4px;" />
+    </div>
+  </section>
+  </sc-if>
+
+  <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:clamp(14px, 3vw, 40px); padding:clamp(20px, 2.5vw, 28px) clamp(20px, 4vw, 40px); border-top:1px solid #e8dfda; border-bottom:1px solid #e8dfda;">
+    <span style="font-size:12px; letter-spacing:0.06em; color:#292320;">5,0 no Google</span>
+    <span style="width:1px; height:12px; background:#e8dfda;"></span>
+    <span style="font-size:12px; letter-spacing:0.06em; color:#756a64;">187 avaliações</span>
+    <span style="width:1px; height:12px; background:#e8dfda;"></span>
+    <span style="font-size:12px; letter-spacing:0.06em; color:#756a64;">Blumenau, SC</span>
+    <span style="width:1px; height:12px; background:#e8dfda;"></span>
+    <span style="font-size:12px; letter-spacing:0.06em; color:#756a64;">Odontologia Estética</span>
+  </div>
+
+  <section id="depoimentos" style="padding:clamp(72px, 9vw, 130px) clamp(20px, 4vw, 40px); scroll-margin-top:80px;">
+    <p style="margin:0 0 clamp(36px, 5vw, 56px); font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#9a8d86;">Quem passou pelo consultório</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(258px, 1fr)); gap:clamp(28px, 3vw, 0px);">
+      <div style="padding-right:clamp(0px, 3vw, 40px);">
+        <p style="margin:0; font-size:11px; letter-spacing:0.22em; color:#302825;">★★★★★</p>
+        <p style="margin:18px 0 0; font-size:clamp(16px, 1.35vw, 19px); line-height:1.55; font-weight:400; color:#292320;">Fui muito bem atendido, com gentileza e atenção do início ao fim. Fiz lentes de resina e alguns reparos estéticos e fiquei muito satisfeito com o resultado e com o cuidado da profissional.</p>
+        <p style="margin:20px 0 0; font-size:12px; letter-spacing:0.05em; color:#9a8d86;">Ciro André Pitz · Avaliação no Google</p>
+      </div>
+      <div style="padding:0 clamp(0px, 3vw, 40px); border-left:1px solid #e8dfda;">
+        <p style="margin:0; font-size:11px; letter-spacing:0.22em; color:#302825;">★★★★★</p>
+        <p style="margin:18px 0 0; font-size:clamp(16px, 1.35vw, 19px); line-height:1.55; font-weight:400; color:#292320;">Já era paciente e foi com a Dra. Nádia que perdi o medo de dentista. Transformar o meu sorriso me devolveu a vontade de sorrir com confiança.</p>
+        <p style="margin:20px 0 0; font-size:12px; letter-spacing:0.05em; color:#9a8d86;">Manuella Inácio · Avaliação no Google</p>
+      </div>
+      <div style="padding-left:clamp(0px, 3vw, 40px); border-left:1px solid #e8dfda;">
+        <p style="margin:0; font-size:11px; letter-spacing:0.22em; color:#302825;">★★★★★</p>
+        <p style="margin:18px 0 0; font-size:clamp(16px, 1.35vw, 19px); line-height:1.55; font-weight:400; color:#292320;">Cuidado, atenção e capricho em todas as etapas, inclusive no pós atendimento. Me senti segura durante todo o processo e fiquei muito satisfeita com o resultado em resina.</p>
+        <p style="margin:20px 0 0; font-size:12px; letter-spacing:0.05em; color:#9a8d86;">Patricia Silva · Avaliação no Google</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(40px, 5vw, 80px); align-items:center; padding:clamp(72px, 9vw, 130px) clamp(20px, 4vw, 40px); background:#f7f2ee; scroll-margin-top:80px;">
+    <div style="max-width:760px;">
+      <p style="margin:0 0 clamp(24px, 3vw, 34px); font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#9a8d86;">Sobre</p>
+      <p style="margin:0; font-size:clamp(23px, 2.7vw, 36px); line-height:1.16; letter-spacing:-0.025em; font-weight:400; color:#292320;">Sou a Dra. Nádia Verter, cirurgiã dentista em Blumenau. Meu trabalho é feito de detalhes: entender o rosto, o jeito de sorrir e o que faz sentido para cada pessoa, para que o resultado continue parecendo <em style="font-style:italic;">natural</em>.</p>
+      <p style="margin:clamp(24px, 3vw, 34px) 0 0; max-width:480px; font-size:15px; line-height:1.7; color:#756a64;">Atendo com calma, explicando cada etapa. Boa parte de quem chega aqui quer se sentir à vontade para sorrir de novo, e é esse cuidado que guia o atendimento do começo ao acompanhamento.</p>
+      <p style="margin:clamp(26px, 3vw, 36px) 0 0; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#9a8d86;">CRO 17435</p>
+    </div>
+    <div style="display:flex; justify-content:center;">
+      <img src="fotos/f3.jpg" alt="Sorriso com lentes em resina feito pela Dra. Nádia Verter" style="width:100%; max-width:460px; aspect-ratio:1151/1366; object-fit:cover; border-radius:230px 230px 6px 6px;" />
+    </div>
+  </section>
+
+  <section id="lentes" style="padding:clamp(72px, 9vw, 130px) clamp(20px, 4vw, 40px); scroll-margin-top:80px;">
+    <p style="margin:0 0 clamp(20px, 2.5vw, 28px); font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#9a8d86;">Principal tratamento</p>
+    <h2 style="margin:0; font-size:clamp(40px, 8vw, 104px); line-height:0.92; letter-spacing:-0.045em; font-weight:400; color:#292320;">Lentes em Resina</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px, 4vw, 64px); align-items:end; margin-top:clamp(36px, 4.5vw, 64px);">
+      <img src="fotos/f5.jpg" alt="Detalhe de sorriso com lentes em resina" style="width:100%; aspect-ratio:1521/1034; object-fit:cover; border-radius:4px;" />
+      <div style="max-width:440px;">
+        <p style="margin:0; font-size:clamp(17px, 1.5vw, 21px); line-height:1.55; color:#292320;">Um trabalho estético feito em resina, planejado caso a caso, pensando em melhorar a aparência do sorriso sem perder o que ele tem de natural.</p>
+        <p style="margin:22px 0 0; font-size:15px; line-height:1.7; color:#756a64;">Cada sorriso é avaliado individualmente. Antes de qualquer tratamento conversamos sobre o que é possível no seu caso, com clareza e sem pressa.</p>
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:10px; margin-top:clamp(24px, 3vw, 34px); min-height:44px; padding:12px 22px; border:1px solid #d8cec8; border-radius:999px; font-size:14px; font-weight:500; color:#302825; transition:background 200ms ease;" style-hover="background:#f1ece8; color:#302825;">
+          <img src="https://cdn.simpleicons.org/whatsapp/302825" alt="WhatsApp" style="width:16px; height:16px;" />
+          Conversar sobre o meu caso
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resultados" style="padding:clamp(72px, 9vw, 130px) clamp(20px, 4vw, 40px); background:#f7f2ee; scroll-margin-top:80px;">
+    <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:clamp(32px, 4vw, 52px);">
+      <h2 style="margin:0; font-size:clamp(34px, 5vw, 60px); line-height:1; letter-spacing:-0.035em; font-weight:400; color:#292320;">Resultados reais</h2>
+      <p style="margin:0; max-width:340px; font-size:14px; line-height:1.6; color:#756a64;">Trabalhos realizados no consultório em Blumenau.</p>
+    </div>
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex; gap:10px; align-items:flex-start;">
+      <img src="fotos/f6.jpg" alt="Antes e depois de sorriso tratado com lentes em resina" style="flex:0.8 1 0; min-width:0; width:100%; aspect-ratio:1122/1402; object-fit:cover; border-radius:4px;" />
+      <img src="fotos/f4.jpg" alt="Comparação de sorriso antes e depois do tratamento estético" style="flex:1 1 0; min-width:0; width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:4px;" />
+      <img src="fotos/f7.jpg" alt="Antes e depois de lentes em resina em paciente masculino" style="flex:0.823 1 0; min-width:0; width:100%; aspect-ratio:1138/1382; object-fit:cover; border-radius:4px;" />
+      <img src="fotos/f2.jpg" alt="Sorriso natural após tratamento com lentes em resina" style="flex:0.833 1 0; min-width:0; width:100%; aspect-ratio:1145/1374; object-fit:cover; border-radius:4px;" />
+      <img src="fotos/f1.jpg" alt="Detalhe do acabamento de lentes em resina" style="flex:0.833 1 0; min-width:0; width:100%; aspect-ratio:1145/1374; object-fit:cover; border-radius:4px;" />
+    </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div style="display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:8px;">
+      <img src="fotos/f6.jpg" alt="Antes e depois de sorriso tratado com lentes em resina" style="width:100%; aspect-ratio:1122/1402; object-fit:cover; border-radius:4px;" />
+      <img src="fotos/f7.jpg" alt="Antes e depois de lentes em resina em paciente masculino" style="width:100%; aspect-ratio:1122/1402; object-fit:cover; border-radius:4px;" />
+      <img src="fotos/f4.jpg" alt="Comparação de sorriso antes e depois do tratamento estético" style="grid-column:1 / -1; width:100%; max-width:420px; justify-self:center; aspect-ratio:1/1; object-fit:cover; border-radius:4px;" />
+      <img src="fotos/f2.jpg" alt="Sorriso natural após tratamento com lentes em resina" style="width:100%; aspect-ratio:1145/1374; object-fit:cover; border-radius:4px;" />
+      <img src="fotos/f1.jpg" alt="Detalhe do acabamento de lentes em resina" style="width:100%; aspect-ratio:1145/1374; object-fit:cover; border-radius:4px;" />
+    </div>
+    </sc-if>
+  </section>
+
+  <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px, 4vw, 72px); padding:clamp(72px, 9vw, 130px) clamp(20px, 4vw, 40px);">
+    <div style="max-width:420px;">
+      <p style="margin:0 0 clamp(20px, 2.5vw, 28px); font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#9a8d86;">Como funciona o contato</p>
+      <h2 style="margin:0; font-size:clamp(32px, 4.4vw, 54px); line-height:1.02; letter-spacing:-0.035em; font-weight:400; color:#292320;">Do primeiro oi até o acompanhamento.</h2>
+    </div>
+    <div>
+      <sc-for list="{{ processo }}" as="item" hint-placeholder-count="4">
+        <div style="border-top:1px solid #e8dfda;">
+          <button onClick="{{ item.toggle }}" style="display:flex; align-items:center; gap:clamp(16px, 2.5vw, 32px); width:100%; min-height:64px; padding:18px 0; background:transparent; border:none; text-align:left; cursor:pointer;">
+            <span style="font-size:13px; letter-spacing:0.04em; color:#c69a8d;">{{ item.num }}</span>
+            <span style="flex:1; font-size:clamp(17px, 1.6vw, 22px); letter-spacing:-0.02em; color:#292320;">{{ item.titulo }}</span>
+            <span style="font-size:20px; font-weight:300; color:#756a64;">{{ item.icone }}</span>
+          </button>
+          <sc-if value="{{ item.aberto }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0 0 26px; padding-left:clamp(29px, 4vw, 53px); max-width:520px; font-size:15px; line-height:1.7; color:#756a64;">{{ item.texto }}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+      <div style="border-top:1px solid #e8dfda;"></div>
+    </div>
+  </section>
+
+  <section id="contato" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(290px, 1fr)); gap:clamp(36px, 4vw, 72px); padding:clamp(72px, 9vw, 130px) clamp(20px, 4vw, 40px); background:#f1ece8; scroll-margin-top:80px;">
+    <div>
+      <p style="margin:0 0 clamp(20px, 2.5vw, 30px); font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#9a8d86;">Onde atendo</p>
+      <p style="margin:0; font-size:clamp(20px, 2.1vw, 28px); line-height:1.35; letter-spacing:-0.025em; color:#292320;">R. Francisco Vahldieck, 955<br />1º Andar, Fortaleza<br />Blumenau, SC, 89056-001</p>
+      <div style="margin-top:clamp(28px, 3.5vw, 44px); border-top:1px solid #e0d6d0; padding-top:20px; display:grid; gap:10px; max-width:340px;">
+        <div style="display:flex; justify-content:space-between; font-size:14px; color:#756a64;"><span>Segunda a sexta</span><span style="color:#292320;">09:00 às 19:30</span></div>
+        <div style="display:flex; justify-content:space-between; font-size:14px; color:#756a64;"><span>Sábado</span><span style="color:#292320;">09:00 às 16:00</span></div>
+        <div style="display:flex; justify-content:space-between; font-size:14px; color:#756a64;"><span>Domingo</span><span style="color:#9a8d86;">Fechado</span></div>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; justify-content:center; max-width:460px;">
+      <h2 style="margin:0; font-size:clamp(30px, 4vw, 50px); line-height:1.02; letter-spacing:-0.035em; font-weight:400; color:#292320;">Vamos conversar sobre o seu sorriso.</h2>
+      <p style="margin:20px 0 0; font-size:15px; line-height:1.7; color:#756a64;">Chame no WhatsApp para solicitar uma avaliação. Respondo pessoalmente para entender o que você gostaria de mudar.</p>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:clamp(26px, 3vw, 36px);">
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:13px 26px; background:#302825; color:#ffffff; border-radius:999px; font-size:14px; font-weight:500; transition:opacity 200ms ease;" style-hover="opacity:0.82; color:#ffffff;">
+          <img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" style="width:16px; height:16px;" />
+          Agendar avaliação
+        </a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex; align-items:center; justify-content:center; width:48px; height:48px; border:1px solid #d8cec8; border-radius:999px; transition:background 200ms ease;" style-hover="background:#f7f2ee;">
+          <img src="https://cdn.simpleicons.org/instagram/302825" alt="Instagram" style="width:18px; height:18px;" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px; padding:clamp(34px, 4vw, 48px) clamp(20px, 4vw, 40px) clamp(90px, 8vw, 56px); border-top:1px solid #e8dfda;">
+    <div>
+      <p style="margin:0; font-size:15px; font-weight:500; letter-spacing:-0.02em; color:#292320;">Dra. Nádia Verter</p>
+      <p style="margin:6px 0 0; font-size:12px; letter-spacing:0.05em; color:#9a8d86;">Odontologia Estética · Blumenau, SC · CRO 17435</p>
+    </div>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border:1px solid #e8dfda; border-radius:999px;">
+        <img src="https://cdn.simpleicons.org/instagram/756a64" alt="Instagram" style="width:16px; height:16px;" />
+      </a>
+      <a href="{{ waLink }}" target="_blank" rel="noopener" aria-label="WhatsApp" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border:1px solid #e8dfda; border-radius:999px;">
+        <img src="https://cdn.simpleicons.org/whatsapp/756a64" alt="WhatsApp" style="width:16px; height:16px;" />
+      </a>
+    </div>
+  </footer>
+</div>
+
+<sc-if value="{{ showFloat }}" hint-placeholder-val="{{ false }}">
+  <a href="{{ waLink }}" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp" style="position:fixed; right:28px; bottom:28px; z-index:80; display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; background:#302825; border-radius:999px; box-shadow:0 4px 24px rgba(41,35,32,0.10); transition:opacity 200ms ease;" style-hover="opacity:0.85;">
+    <img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" style="width:23px; height:23px;" />
+  </a>
+</sc-if>
+<sc-if value="{{ showBar }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed; left:0; right:0; bottom:0; z-index:80; padding:12px 16px calc(12px + env(safe-area-inset-bottom)); background:rgba(250,248,245,0.94); backdrop-filter:blur(10px); border-top:1px solid #e8dfda;">
+    <a href="{{ waLink }}" target="_blank" rel="noopener" style="display:flex; align-items:center; justify-content:center; gap:10px; height:48px; background:#302825; color:#ffffff; border-radius:999px; font-size:14px; font-weight:500;">
+      <img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" style="width:17px; height:17px;" />
+      Agendar avaliação
+    </a>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;ctaFlutuante&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamento&quot;},&quot;processoPrimeiroAberto&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamento&quot;},&quot;whatsappMensagem&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Olá, vim pelo site e gostaria de agendar uma avaliação.&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    const w = typeof window !== 'undefined' ? window.innerWidth : 1440;
+    this.state = {
+      isMobile: w < 900,
+      menuOpen: false,
+      open: (props.processoPrimeiroAberto ?? true) ? 0 : -1
+    };
+    this.onResize = () => {
+      const m = window.innerWidth < 900;
+      if (m !== this.state.isMobile) this.setState({ isMobile: m, menuOpen: false });
+    };
+  }
+  componentDidMount() { window.addEventListener('resize', this.onResize); }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+
+  renderVals() {
+    const msg = this.props.whatsappMensagem ?? 'Olá, vim pelo site e gostaria de agendar uma avaliação.';
+    const waLink = 'https://wa.me/5547992754013?text=' + encodeURIComponent(msg);
+    const cta = this.props.ctaFlutuante ?? true;
+    const base = [
+      { num: '01', titulo: 'Conversa inicial', texto: 'Você chama no WhatsApp e conta o que gostaria de mudar no seu sorriso.' },
+      { num: '02', titulo: 'Avaliação individual', texto: 'Cada caso é avaliado com calma e atenção aos detalhes, olhando para o rosto e para o jeito de sorrir.' },
+      { num: '03', titulo: 'Orientação', texto: 'Explico as possibilidades adequadas para o seu caso antes de qualquer tratamento.' },
+      { num: '04', titulo: 'Tratamento e acompanhamento', texto: 'O cuidado continua depois do atendimento, com acompanhamento próximo do resultado.' }
+    ];
+    const processo = base.map((it, i) => ({
+      num: it.num,
+      titulo: it.titulo,
+      texto: it.texto,
+      aberto: this.state.open === i,
+      icone: this.state.open === i ? '×' : '+',
+      toggle: () => this.setState(s => ({ open: s.open === i ? -1 : i }))
+    }));
+    return {
+      waLink,
+      processo,
+      isMobile: this.state.isMobile,
+      isDesktop: !this.state.isMobile,
+      menuOpen: this.state.menuOpen,
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      showFloat: cta && !this.state.isMobile,
+      showBar: cta && this.state.isMobile
+    };
+  }
+}
+</script>
+</body>
+</html>
